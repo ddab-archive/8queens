@@ -1,0 +1,37 @@
+/*
+ * Distributed under the MIT license.
+ * See the accompanying LICENSE file or go to
+ * http://delphidabbler.mit-license.org/1991-2016/
+ *
+ * $Rev: 66 $
+ * $Date: 2016-02-14 02:15:25 +0000 (Sun, 14 Feb 2016) $
+ *
+ * Resources for 8 Queens problem solver.
+*/
+
+
+/*
+  Bitmap of queen chess piece
+*/
+QUEEN BITMAP "Resources\Queen.bmp"
+
+/*
+  RTF help prompt files for display in prgram window: resource ID is same as
+  corresponding program mode number
+*/
+1 RCDATA "Resources\Msg1.rtf"
+2 RCDATA "Resources\Msg2.rtf"
+3 RCDATA "Resources\Msg3.rtf"
+4 RCDATA "Resources\Msg4.rtf"
+
+/*
+  Program's icon
+*/
+
+MAINICON ICON "Resources\Queens.ico"
+
+/*
+  Manifest file for Windows XP and later OSs
+*/
+1 24 "Resources\Queens.manifest"
+

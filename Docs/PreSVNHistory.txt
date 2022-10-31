@@ -1,0 +1,421 @@
+================================================================================
+
+8 QUEENS: Historical update information from v1.0.0 to v4.0.2
+
+================================================================================
+
+This file records known changes to files and releases of 8 Queens from the first
+release (v1.0) until release 4.0.2 when the project was placed was placed under
+version control with Subversion.
+
+There are two sections:
+
+  1 Files: Lists all source code and development tools and provides details of
+    changes to these files that preceded version control.
+
+  2 Releases: Lists all the releases of 8 Queens and notes which file revisions
+    were included in each release.
+
+================================================================================
+FILES
+================================================================================
+
+This section lists all files for which update history is known between v1.0.0
+and v4.0.2.
+
+--------------------------------------------------------------------------------
+DevTools\BuildAll.bat
+--------------------------------------------------------------------------------
+        05 Mar 2007  - First version. Builds whole program by calling Build.bat.
+        12 Mar 2012  - MOVED TO SUBVERSION
+
+--------------------------------------------------------------------------------
+DevTools\BuildAndRelease.bat
+--------------------------------------------------------------------------------
+        05 Mar 2007  - First version. Builds whole project and creates release
+                       zip files.
+        12 Mar 2012  - MOVED TO SUBVERSION
+
+--------------------------------------------------------------------------------
+DevTools\BuildPascal.bat
+--------------------------------------------------------------------------------
+        05 Mar 2007  - First version. Builds pascal source by calling Build.bat.
+        12 Mar 2012  - MOVED TO SUBVERSION
+
+--------------------------------------------------------------------------------
+DevTools\BuildResources.bat
+--------------------------------------------------------------------------------
+        03 Nov 2005  - First version. Builds program resources.
+        05 Mar 2007  - Modified to call new Build.bat.
+        12 Mar 2012  - MOVED TO SUBVERSION
+
+--------------------------------------------------------------------------------
+DevTools\BuildSetup.bat
+--------------------------------------------------------------------------------
+        05 Mar 2007  - First version. Builds setup program by calling Build.bat.
+        12 Mar 2012  - MOVED TO SUBVERSION
+
+--------------------------------------------------------------------------------
+DevTools\ReleaseExe.bat
+--------------------------------------------------------------------------------
+        05 Mar 2007  - First version. Create executable release zip file.
+        12 Mar 2012  - MOVED TO SUBVERSION
+
+--------------------------------------------------------------------------------
+DevTools\ReleaseSrc.bat
+--------------------------------------------------------------------------------
+        05 Mar 2007  - First version. Creates source code release zip file.
+        12 Mar 2012  - MOVED TO SUBVERSION
+
+--------------------------------------------------------------------------------
+DevTools\Tidy.bat
+--------------------------------------------------------------------------------
+        05 Mar 2007  - First version. Deletes backup and temp source files.
+        12 Mar 2012  - MOVED TO SUBVERSION
+
+--------------------------------------------------------------------------------
+Src\Build.bat
+--------------------------------------------------------------------------------
+v1.0 of 05 Mar 2007  - First version. Builds project and installs program.
+        12 Mar 2012  - MOVED TO SUBVERSION
+
+--------------------------------------------------------------------------------
+Src\ChkGrid.pas
+--------------------------------------------------------------------------------
+v1.0 of 06 Mar 1997  - Original version.
+        03 May 2998  - DELETED.
+
+--------------------------------------------------------------------------------
+Src\FmMain.pas
+--------------------------------------------------------------------------------
+v1.0 of 06 Mar 1997  - Original version (Named MainForm.pas).
+                     - Handles main program form display and events, initiates
+                       calculations in response to user input and updates
+                       display.
+v1.1 of 21 Jul 1997  - Changed to use application's title as form's caption.
+                     - Tidied source code.
+v2.0 of 03 May 1998  - Re-coded to accommodate fact that problem solving engine
+                       is now a class rather than a set of procedures. Window
+                       now has lighter font.
+                     - Changed completion notification to highlight the required
+                       message using window title colours.
+                     - Chessboard now displays queens using an image of a chess
+                       piece rather than red "blobs".
+                     - Changed style of main window to resemble a dialog box.
+                     - Added new About and Help buttons.
+v3.0 of 06 Nov 2005  - Totally redesigned main window:
+                       - Removed help button since help file removed.
+                       - Enlarged chess board.
+                       - Added new rich edit control to display context
+                         sensitive "prompt" help messages.
+                       - Added "slide show" facility to automatically display
+                         solutions, along with a speed control.
+                       - Added reset button and facility to restart to find all
+                         solutions again from start.
+                       - Changed from dialog window to fixed size main window
+                         with title bar caption, close and minimize button. Now
+                         appears in task bar.
+                       - Removed display of iteration count.
+                       - Added link to DelphiDabbler website.
+                       - Applied XP themes.
+                     - Changed to use current 32 bit versions of version
+                       information and about box components.
+v3.1 of 05 Mar 2007  - Renamed from MainForm.pas to FmMain.pas.
+                     - Changed to invalidate only the chessboard rather than
+                       whole form when we want to redraw chessboard.
+v3.2 of 17 Jun 2008  - Applied a fix for Delphi's Alt key bug that was hiding
+                       buttons when Alt key pressed on Vista with themes.
+                     - Modified to change task bar handling. Main form window
+                       is now used by task bar instead of Application object's
+                       hidden window. This change was required for compatibility
+                       with Vista.
+                     - Now configures About Box Component (v3.4 or later) to
+                       enable about box to work correctly with main form and
+                       task bar and to use OSs system font.
+                     - Removed XPMan unit - explicit manifest file now used.
+                     - Changed UI to use OSs system font. Adjusted some controls
+                       to handle larger system font on Vista.
+        12 Mar 2012  - MOVED TO SUBVERSION
+
+--------------------------------------------------------------------------------
+Src\Install.iss
+--------------------------------------------------------------------------------
+v1.0 of 05 Mar 2007  - Original version for use with 8 Queens v4.0.1.
+v2.0 of 17 Jun 2008  - Re-written to work with ISPP pre-processor.
+                     - Now automatically gets version number from Queens.exe
+                       removing need to update this file for each release.
+                     - Most paths, files and other app information now
+                       represented by pre-processor macros.
+                     - Removed option to create desktop icon.
+                     - Removed isreadme flag from files section and added
+                       display of readme file to run section.
+                     - Added some missing Application and Version info values
+                       and changed a few other parameters.
+                     - Changed to install PDF user guide in place of old HTML
+                       version.
+        12 Mar 2012  - MOVED TO SUBVERSION
+
+--------------------------------------------------------------------------------
+Src\Queens.dpr
+--------------------------------------------------------------------------------
+v1.0 of 06 Mar 1997  - Original version: main project file.
+v1.1 of 21 Jul 1997  - Added program title.
+v1.2 of 03 Mar 1998  - Removed ChkGrid unit.
+                       Added reference to new Resource.rc resource file.
+v1.3 of 06 Nov 2005  - Included new VersionInfo.res resource file.
+                     - Changed title to "8 Queens Problem Solver".
+                     - Removed help file reference.
+v1.4 of 05 Mar 2007  - Removed resource directive that included Queens.res.
+                     - Program icon is now in Resource.res.
+v1.5 of 17 Jun 2008  - Renamed Calc unit as UCalc.
+                     - Added new UAltBugFix and UPlatform units.
+        12 Mar 2012  - MOVED TO SUBVERSION
+
+--------------------------------------------------------------------------------
+Src\Resource.rc
+--------------------------------------------------------------------------------
+v1.0 of 05 May 1998  - Original version. Contains:
+                       - Bitmap used to display queen on chess board.
+                       - Version information about this release.
+v2.0 of 06 Nov 2005  - Major update:
+                       - Removed version information resource (version info
+                         now specified in VersionInfo.vi).
+                       - Added rtf files displayed in main form as context
+                         sensitive help prompts.
+v2.1 of 05 Mar 2007  - Added program icon.
+v2.2 of 17 Jun 2008  - Added manifest that enables XP and Vista themes and
+                       informs Vista that program can be run with standard user
+                       privileges.
+        12 Mar 2012  - MOVED TO SUBVERSION
+
+--------------------------------------------------------------------------------
+Src\UAltBugFix.pas
+--------------------------------------------------------------------------------
+v1.0 of 17 Jun 2008  - Original version.
+        12 Mar 2012  - MOVED TO SUBVERSION
+
+--------------------------------------------------------------------------------
+Src\UCalc.pas
+--------------------------------------------------------------------------------
+v1.0 of 06 Mar 1991  - Original version (named Queens.pas). Contained whole
+                       program code including game engine and console display
+                       / input management. Was a complete DOS program.
+v2.0 of 06 Mar 1997  - Major revision:
+                       - Removed game loop to make suitable for being event
+                         driven from Windows GUI. Program used to poll keyboard
+                         after displaying each solution. Now it responds to
+                         events to determine when to display next solution.
+                       - Removed all display code. This is now handled by main
+                         form unit.
+                       - Moved code that maintains grid to new TCheckGrid class
+                         in UChkGrid.pas.
+                       - Renamed to Calc.pas.
+v3.0 of 03 May 1998  - Major revision:
+                       - Recast the procedural code as a class.
+                       - Moved logical representation of chess board into this
+                         new class (from ChkGrid.pas) and represented chess
+                         board using an array property.
+                       - Made minor changes to some types.
+v4.0 of 06 Nov 2005  - Major revision: class was revised as state machine with
+                       new functionality and clearer implementation.
+                       - Added states to solution engine depending on whether
+                         engine is newly initialized, in progress of finding
+                         solutions or has finished (ie. found last solution).
+                       - Renamed enumerated types with more meaningful names.
+                       - Deleted TEngine.Iteration property.
+                       - Added TEngine.Intialize procedure to restart solution
+                         finding from 1st solution and moved revised data
+                         initialization code to it from constructor.
+                       - Renamed TEngine.FindNext method to NextSolution method
+                         that returns whether a solution was found.
+                       - Replaced TEngine.Success property with Finished
+                         property.
+                       - Renamed TEngine.Place method with PlaceQueen method and
+                         made logic clearer. Replaced hard wired code to remove
+                         queen from a row with call to new RemoveQueen method.
+                       - Added new TEngine.RemoveQueen method which removes a
+                         queen from a column when backtracking.
+v4.1 of 17 Jun 2008  - Minor refactoring:
+                       - Replaced some integer literal board and queen
+                         co-ordinates with symbolic equivalents.
+                       - Added const specifier to constant parameters.
+                     - Renamed from Calc.pas to UCalc.pas.
+        12 Mar 2012  - MOVED TO SUBVERSION
+
+--------------------------------------------------------------------------------
+Src\UPlatform.pas
+--------------------------------------------------------------------------------
+v1.0 of 17 Jun 2008  - Original version.
+        12 Mar 2012  - MOVED TO SUBVERSION
+
+--------------------------------------------------------------------------------
+Src\VersionInfo.vi
+--------------------------------------------------------------------------------
+        06 Nov 2005  - New file containing program's version information.
+                       Version informatiom updated re release 4.0 including
+                       switch to MPL.
+        05 Mar 2007  - Updated file and product numbers for revision 4.0.1 build
+                       6.
+                     - Corrected and rephrased some prompt text.
+                     - Updated copyright date range to 1991-2007.
+                     - Changed comments to refer to new EULAR in License.txt and
+                       on 8 Queens home page.
+                     - Removed RC and VI comments.
+                     - Removed resource compiler output directory.
+                     - Added Mozilla Public License.
+        12 Mar 2012  - MOVED TO SUBVERSION
+
+--------------------------------------------------------------------------------
+Src\Help\Queens.hpj
+--------------------------------------------------------------------------------
+v1.0 of 03 May 1998  - Original version: help project file.
+        06 Nov 2005  - DELETED
+
+--------------------------------------------------------------------------------
+Src\Help\Queens.rtf
+--------------------------------------------------------------------------------
+        03 May 1998  - Original version: help topic source file.
+        06 Nov 2005  - DELETED
+
+--------------------------------------------------------------------------------
+Src\Resources\Msg1.rtf
+--------------------------------------------------------------------------------
+        06 Nov 2005  - New file containing rich text message displayed when
+                       program ready to start finding solutions.
+        05 Mar 2007  - Rephrased information about altering slide show speed.
+        12 Mar 2012  - MOVED TO SUBVERSION
+
+--------------------------------------------------------------------------------
+Src\Resources\Msg2.rtf
+--------------------------------------------------------------------------------
+        06 Nov 2005  - New file containing rich text message displayed when
+                       program ready to find next solution.
+        05 Mar 2007  - Rephrased information about altering slide show speed.
+        12 Mar 2012  - MOVED TO SUBVERSION
+
+--------------------------------------------------------------------------------
+Src\Resources\Msg3.rtf
+--------------------------------------------------------------------------------
+        06 Nov 2005  - New file containing rich text message displayed when a
+                       slide show is running.
+        05 Mar 2007  - Fixed typo and modified text.
+        12 Mar 2012  - MOVED TO SUBVERSION
+
+--------------------------------------------------------------------------------
+Src\Resources\Msg4.rtf
+--------------------------------------------------------------------------------
+        06 Nov 2005  - New file containing rich text message displayed when all
+                       solutions have been found.
+        12 Mar 2012  - MOVED TO SUBVERSION
+
+--------------------------------------------------------------------------------
+Src\Resources\Queens.bmp
+--------------------------------------------------------------------------------
+        23 Apr 1998  - New file containing used as image of chess queen piece.
+        12 Mar 2012  - MOVED TO SUBVERSION
+
+--------------------------------------------------------------------------------
+Src\Resources\Queens.ico
+--------------------------------------------------------------------------------
+        14 Jul 1997  - New file containing program icon.
+        12 Mar 2012  - MOVED TO SUBVERSION
+
+--------------------------------------------------------------------------------
+Src\Resources\Queens.manifest
+--------------------------------------------------------------------------------
+v1.0 of 17 Jun 2008  - Original version: source of program's manifest resource.
+        12 Mar 2012  - MOVED TO SUBVERSION
+
+
+================================================================================
+RELEASES
+================================================================================
+
+This section lists all releases of 8 Queens from the first version (1.0) to
+release 4.0.2. For each release the following is noted:
+
+  + Version number.
+  + List of new and added source files.
+
+The Development tools, .bpg and .cfg files, test files and documentation are not
+included in this information.
+
+See changelog for description of changes in each version.
+
+--------------------------------------------------------------------------------
+v1.0 of 19 Dec 1991
+--------------------------------------------------------------------------------
+New    : Queens.pas v1.0
+
+--------------------------------------------------------------------------------
+v2.0 of 06 Mar 1997
+--------------------------------------------------------------------------------
+New    : Queens.dpr v1.0
+New    : MainForm.pas v1.0
+New    : ChkGrid.pas v1.0
+Updated: Calc.pas v2.0 (renamed from Queens.pas)
+
+--------------------------------------------------------------------------------
+v2.1 of 21 Jul 1997
+--------------------------------------------------------------------------------
+Updated: Queens.dpr v1.1
+Updated: MainForm.pas v1.1
+New    : Resources\Queens.ico of 14 Jul 1997
+
+--------------------------------------------------------------------------------
+v3.0 of 03 May 1998
+--------------------------------------------------------------------------------
+Removed: ChkGrid.pas
+Updated: Queens.dpr v1.2
+Updated: MainForm.pas v2.0
+Updated: Calc.pas v3.0
+New    : Resource.rc v1.0
+New    : Help\Queens.rtf of 03 May 1998
+New    : Help\Queens.hpj v1.0
+New    : Resources\Queens.bmp 23 Apr 1998
+
+--------------------------------------------------------------------------------
+v4.0 of 06 Nov 2005
+--------------------------------------------------------------------------------
+Removed: Help\Queens.rtf
+Removed: Help\Queens.hpj
+Updated: Queens.dpr v1.3
+Updated: MainForm.pas v3.0
+Updated: Calc.pas v4.0
+Updated: Resource.rc v2.0
+New    : VersionInfo.vi of 06 Nov 2005
+New    : Resources\Msg1.rtf of 06 Nov 2005
+New    : Resources\Msg2.rtf of 06 Nov 2005
+New    : Resources\Msg3.rtf of 06 Nov 2005
+New    : Resources\Msg4.rtf of 06 Nov 2005
+
+--------------------------------------------------------------------------------
+v4.0.1 of 05 Mar 2007
+--------------------------------------------------------------------------------
+Updated: Queens.dpr v1.4
+Updated: FmMain.pas v3.1 (renamed from MainForm.pas)
+Updated: Resource.rc v2.1
+Updated: VersionInfo.vi of 05 Mar 2007
+New    : Install.iss v1.0
+New    : Build.bat v1.0
+Updated: Resources\Msg1.rtf of 05 Mar 2007
+Updated: Resources\Msg2.rtf of 05 Mar 2007
+Updated: Resources\Msg3.rtf of 05 Mar 2007
+
+--------------------------------------------------------------------------------
+v4.0.2 of 17 Jun 2008
+--------------------------------------------------------------------------------
+Updated: Queens.dpr v1.5
+Updated: FmMain.pas v3.2
+New    : UAltBugFix.pas v1.0
+Updated: UCalc.pas v4.1 (renamed from Calc.pas)
+New    : UPlatform.pas v1.0
+Updated: Resource.rc v2.2
+Updated: VersionInfo.vi 17 Jun 2008
+Updated: Install.iss v2.0
+New    : Resources\Queens.manifest
+
+--------------------------------------------------------------------------------
+$Rev: 5 $
+$Date: 2012-03-14 23:40:07 +0000 (Wed, 14 Mar 2012) $
+--------------------------------------------------------------------------------

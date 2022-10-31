@@ -1,0 +1,67 @@
+; ------------------------------------------------------------------------------
+; Change Log for 8 Queens
+;
+; $Rev: 82 $
+; $Date: 2016-02-15 00:55:02 +0000 (Mon, 15 Feb 2016) $
+; ------------------------------------------------------------------------------
+
+Release v4.1.1 of 15 February 2016
++ Fixed memory leak. Achieved by recompiling with bug-fixed v2.2.1 of the DelphiDabbler Hot Label Component, an earlier version of which caused the leak.
++ Added Windows compatibility information to application manifest indicating compatibility with Windows 10 and lower.
++ Now compiled with Delphi XE instead of Delphi 2010. 
++ Thoroughly overhauled and reorganised documentation, including an update to the user manual.
++ Re-licensed program under MIT license: http://delphidabbler.mit-license.org/1991-2016/.
++ Installer no longer gives an option to display README file.
+
+Release v4.1 of 18 March 2012
++ Holding mouse key down on a square now displays rows, columns and diagonals in which a queen on the square can take other pieces.
++ Some minor UI changes, slightly increasing size of chessboard, prompt area and main window.
++ Significant refactoring, particularly to problem solving engine and chessboard display.
++ Modified to compile with Delphi 2010. Removed display bug fix code added in v4.0.2 since not required with Delphi 2010.
++ Installer changed to be Unicode compatible.
++ Updated documentation, including user guide and on-screen prompts.
++ Most source code changed to Mozilla Public License v2.0.
+
+Release v4.0.2 of 18 June 2008
++ Provided work-around for Delphi's Alt key bug on XP and Vista (CodeGear Quality Central bug report #374030).
++ Changed to make application minimisation, task bar preview window, and appearance in "Flip 3D" task switching display correctly on Windows Vista.
++ Added support for default operating system font and adjusted controls for larger Vista Segoe font.
++ Updated manifest resource to ensure compatibility with Windows Vista. Continued to use themes.
++ Some minor refactoring of calculation engine.
++ Revised install script to use macros.
+
+Release v4.0.1 of 05 March 2007
++ Revised main form so that only chess board itself is redrawn when we need to update it, rather than whole form.
++ Corrected and rephrased some prompt text.
++ Added new batch file to build program.
++ Created new installer using Inno Setup.
++ Changed to new end user license agreement for the executable program. The program remains open source.
+
+Release v4.0 of 06 November 2005
++ Converted to 32 bit Windows with XP theme support.
++ Redesigned main window.
++ Redesigned solution engine as state machine with facility to reset the engine to enable all solutions to be found again.
++ Added facility to restart finding of solutions.
++ Added ability to automatically show solutions as a "slide show".
++ Removed Windows help file and replaced with context sensitive prompts displayed in main window.
++ Added link to DelphiDabbler.com.
++ Changed to Mozilla Public License.
+
+v3.0 of 03 May 1998, not released until 01 April 1999
++ Major re-write from v2.0.
++ Main user interface redesigned to appear as a dialog box.
++ The queens on the chessboard now appear as images of chess pieces rather than blobs.
++ Help system added which tells how to use the program and also how the problem was solved. Help file also includes the full source code.
++ About box added which reads its information from a version information resource included in the program file.
++ Problem solution engine re-written in an object oriented way.
+
+Un-released v2.1 of 21 July 1997
++ Added application title to project file.
++ Added custom program icon.
++ Removed design-time caption from form and set caption at run-time to be same as application title.
+
+Un-released v2.0 of 06 March 1997
++ Total rewrite as Windows 3.1 program - compiled with Delphi 1.
+
+v1.0 of 09 December 1991, not released until 01 April 1999
++ Original DOS version - compiled with Turbo Pascal.

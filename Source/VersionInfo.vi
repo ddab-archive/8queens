@@ -1,0 +1,46 @@
+;===============================================================================
+; Distributed under the MIT license.
+; See the accompanying LICENSE file or go to
+; http://delphidabbler.mit-license.org/1991-2016/
+;
+; $Rev: 79 $
+; $Date: 2016-02-14 22:11:30 +0000 (Sun, 14 Feb 2016) $
+;
+; Version information description file used to create VersionInfo.res resource
+; file used by the 8 Queens Problem solver. Build this file with DelphiDabbler
+; Version Information Editor from http://www.delphidabbler.com/. Compile the
+; resulting .rc file using the Borland BRCC32 resource compiler.
+;===============================================================================
+
+
+[Fixed File Info]
+File Version #=4, 1, 1, 9
+Product Version #=4, 1, 1, 0
+File OS=4
+File Type=1
+File Sub-Type=0
+File Flags Mask=0
+File Flags=0
+
+[Variable File Info]
+Language=2057
+Character Set=1252
+
+[String File Info]
+Comments=Released under the MIT License - see the file LICENSE in the program installation folder.
+Company Name=DelphiDabbler.
+File Description=8 Queens Problem Solver.
+File Version=<#F1>.<#F2>.<#F3>
+Internal Name=<SHORTFNAME>
+Legal Copyright=Copyright © 1991-<YEAR> P.D.Johnson.
+Legal Trademark=
+Original File Name=Queens.exe
+Private Build=
+Product Name=DelphiDabbler 8 Queens Problem Solver
+Product Version=Release <#P1>.<#P2>.<#P3>
+Special Build=
+
+[Configuration Details]
+Identifier=VERINFO
+NumRCComments=0
+

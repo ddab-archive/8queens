@@ -1,0 +1,110 @@
+================================================================================
+
+8 QUEENS SOURCE CODE LICENSING NOTES
+
+================================================================================
+
+This document discusses and presents the relevant licenses governing the
+8 Queens source code available from DelphiDabbler.com as part of the 8 Queens
+source code download.
+
+The download includes:
+
++ Original Source Code
++ Various image files.
++ Various rich text format documents (included in resources).
++ A manifest file (included in resources).
++ Documentation
+
+For information on how to build the program see Compiling.txt.
+
+The download does not include all the source code required to rebuild 8 Queens.
+Explicitly it doesn't include the following thrid party code:
+
++ Source files from the Delphi VCL. You must have Delphi in order to access
+  these files.
++ DelphiDabbler library components and units. These are all available from
+  http://www.delphidabbler.com/software/queens/download
+
+These notes apply only to code included in the download.
+
+--------------------------------------------------------------------------------
+Original Source Code
+--------------------------------------------------------------------------------
+
+Original source files are stored in the the following directories:
+
+  Source
+  Source\Resources
+
+Any original source code file that is governed by a license has a comment to
+that effect in the source. The exception is that .dfm files are considered to be
+governed by the same license as their associated .pas file.
+
+Any other source code files that contain no copyright or license information are
+public domain.
+
+Many files are licensed under the Mozilla Public License v2.0. A full copy of
+that license can be found in MPL.txt
+
+--------------------------------------------------------------------------------
+Documentation
+--------------------------------------------------------------------------------
+
+Documentation files are maintained in the Docs directory. In addition the
+Compile.txt file is maintained in the root directory.
+
+Except for the files listed below all documentation has permissive licenses.
+Please see the document itself, and any source code for licensing issues. If no
+license statement appears the documents can be edited freely.
+
+ChangeLog.txt
+-------------
+May only be updated to describe changes made to the release of any derivative
+work. You are urged to maintain this file, but it may be removed if desired.
+
+License.txt
+-----------
+May not be changed.
+
+MPL.txt
+-------
+This file may not be modified and must be distributed with any derivative work.
+
+SourceCodeLicenses.txt
+----------------------
+May be updated to provide license information that applies to any additional
+source files. Information pertaining to unmodified existing files must be
+retained.
+
+--------------------------------------------------------------------------------
+Image Files (.ico, .bmp)
+--------------------------------------------------------------------------------
+
+Two image files are used in the program. They are stored in the
+"Source\Resources" directory. Both are original. They are:
+
+Queen.bmp
+---------
+Represents a queen chess piece. No license applies. Use without restriction.
+
+Queens.ico
+----------
+This file is the program icon. It may not be altered in any way and may not be
+used in any other programs, including programs derived from this source code,
+unless explicit permission is given by the author.
+
+This means that if you modify the source and publish your changes then you must
+remove the icon or replace it with you own.
+
+--------------------------------------------------------------------------------
+Rich Text Files (.rtf)
+--------------------------------------------------------------------------------
+
+Several rich text files are used by the program as help text. They are stored in
+the "Source\Resources" directory and are not licensed.
+
+--------------------------------------------------------------------------------
+$Rev: 48 $
+$Date: 2012-03-17 10:34:34 +0000 (Sat, 17 Mar 2012) $
+--------------------------------------------------------------------------------
