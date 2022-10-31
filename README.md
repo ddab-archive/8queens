@@ -12,10 +12,21 @@ A user guide is available in open document and PDF formats in this repo's `Docs`
 
 The final release of the program is [v4.1.1](https://github.com/ddab-archive/8queens/releases/tag/v4.1.1-FINAL).
 
-### Changes from the last release
+## Source Code
 
-The `main` branch of this project differs from the final release in one way. The original `README.md` file has been renamed `README-original.md` to make way for this file.
+The source code was not originally developed under version control. Eventually the source code was moved to a Subversion repository. A summary of changes made before moving to version control can be found in [`Docs/PreSVNHistory.txt`](https://raw.githubusercontent.com/ddab-archive/8queens/main/Docs/PreSVNHistory.txt). The remainder of the history was recorded in the Subversion repo, a dump of which has been uploaded to `SVN/8queens-svndump.zip` [[download](https://github.com/ddab-archive/8queens/raw/main/SVN/8queens-svndump.zip)].
 
-The original `README.md` is the one that is included with release. It is also included in the final source code.
+### Commits since the last release
 
-To see the state of the repo as originally archived, switch to the [`v4.1.1-FINAL`](https://github.com/ddab-archive/8queens/tree/v4.1.1-FINAL) tag.
+The `main` branch of this project differs from the final release in two ways.
+
+1. The original `README.md` file has been renamed `README-original.md` so that this file will be displayed on GitHub.
+2. `8queens-svndump.zip` was uploaded to the `SVN` directory, as noted above.
+
+The original `README.md` is the one that is included with the final release. It is also included in the source code zip file for that release.
+
+The source code as it was at the final release can be viewed on GitHub by switching to the [`v4.1.1-FINAL`](https://github.com/ddab-archive/8queens/tree/v4.1.1-FINAL) tag.
+
+## License
+
+This program is released under the terms of the [MIT License](http://delphidabbler.mit-license.org/1991-2016/).
